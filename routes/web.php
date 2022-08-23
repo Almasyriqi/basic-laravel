@@ -16,3 +16,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/', fn () => view('home'));
+Route::get('/about', fn () => view('about'));
+Route::get('/gallery', fn () => view(
+    'gallery',
+    ['name' => ['Novel', 'Iphone', 'Troli', 'Mouse1', 'Mouse2', 'Mouse3']]
+));
