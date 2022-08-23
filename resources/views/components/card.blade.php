@@ -1,5 +1,5 @@
 <div class="card" style="width: 300; float: left; margin: 40px;">
-    @if ($image)
+    @if ($image != '')
         <img src="/images/{{$image}}.jpg" alt="gambar" width="300" height="300">
     @endif
     

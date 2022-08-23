@@ -12,7 +12,7 @@ class Card extends Component
      * @return void
      */
     public $title, $image;
-    public function __construct($title, $image)
+    public function __construct($title, $image='')
     {
         $this->title = $title;
         $this->image = $image;
